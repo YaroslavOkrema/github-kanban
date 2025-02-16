@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84eddcbc-aa51-468a-8bd9-418c55924e45" name="Changes" comment="feat: add basic structure">
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+    <list default="true" id="84eddcbc-aa51-468a-8bd9-418c55924e45" name="Changes" comment="feat: add prettier">
+      <change afterPath="$PROJECT_DIR$/github-kanban/src/api/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github-kanban/src/store/reducers/issueReducer/constants.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github-kanban/src/store/reducers/issueReducer/issuesSlice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github-kanban/src/store/reducers/issueReducer/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github-kanban/src/store/store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github-kanban/src/store/thunks/fetchIssuesThunk.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/github-kanban/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/github-kanban/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/github-kanban/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/github-kanban/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github-kanban/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/github-kanban/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github-kanban/src/components/Column/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/github-kanban/src/components/Column/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github-kanban/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/github-kanban/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +27,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -59,6 +69,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\reps\github-kanban\github-kanban\src\store\reducers\issueReducer" />
+      <recent name="D:\reps\github-kanban\github-kanban" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -92,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739715117778</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: add prettier">
+      <option name="closed" value="true" />
+      <created>1739715618509</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1739715618509</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +125,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: add libs" />
     <MESSAGE value="feat: add basic structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add basic structure" />
+    <MESSAGE value="feat: add prettier" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add prettier" />
   </component>
 </project>
