@@ -9,7 +9,10 @@ export const fetchIssuesFromRepo = async (repoUrl: string) => {
       `https://api.github.com/repos/${owner}/${repo}/issues`,
     )
     return response.data
-  } catch (error: any) {
-    throw new Error(error.response?.data?.message || 'Failed to load issues')
+  } catch (error) {
+    if (axios.isAxiosError(error)) {
+      throw new Error(error.response?.data?.message || 'Failed to load issues')
+    }
+    throw new Error('Unexpected error occurred')
   }
 }

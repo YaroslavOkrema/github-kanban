@@ -1,11 +1,11 @@
-export interface Issue {
+export type Issue = {
   id: number
   title: string
   state: 'open' | 'closed'
   assignee: { login: string } | null
 }
 
-export interface IssuesState {
+export type IssuesState = {
   repoUrl: string
   issues: Issue[]
   loading: boolean

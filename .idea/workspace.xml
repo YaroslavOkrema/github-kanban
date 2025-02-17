@@ -4,19 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84eddcbc-aa51-468a-8bd9-418c55924e45" name="Changes" comment="feat: add prettier">
-      <change afterPath="$PROJECT_DIR$/github-kanban/src/api/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/github-kanban/src/store/reducers/issueReducer/constants.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/github-kanban/src/store/reducers/issueReducer/issuesSlice.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/github-kanban/src/store/reducers/issueReducer/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/github-kanban/src/store/store.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/github-kanban/src/store/thunks/fetchIssuesThunk.ts" afterDir="false" />
+    <list default="true" id="84eddcbc-aa51-468a-8bd9-418c55924e45" name="Changes" comment="feat: add redux">
+      <change afterPath="$PROJECT_DIR$/github-kanban/src/components/Columns/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github-kanban/src/components/Columns/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github-kanban/src/components/IssueCard/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github-kanban/src/components/KanbanBoard/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github-kanban/src/components/KanbanBoard/useKanbanBoard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github-kanban/src/components/RepoForm/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github-kanban/src/components/RepoForm/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github-kanban/src/components/RepoForm/useRepoForm.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github-kanban/src/types/enums.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github-kanban/src/useApp.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/github-kanban/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/github-kanban/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/github-kanban/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/github-kanban/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/github-kanban/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/github-kanban/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/github-kanban/src/components/Column/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/github-kanban/src/components/Column/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/github-kanban/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/github-kanban/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github-kanban/src/components/Column/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/github-kanban/src/components/IssueCard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/github-kanban/src/components/IssueCard/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github-kanban/src/components/KanbanBoard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/github-kanban/src/components/KanbanBoard/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github-kanban/src/store/reducers/issueReducer/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/github-kanban/src/store/reducers/issueReducer/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,23 +58,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "develop",
-    "last_opened_file_path": "D:/reps",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "D:\\reps\\github-kanban\\github-kanban\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/reps&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\reps\\github-kanban\\github-kanban\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\reps\github-kanban\github-kanban\src\components\KanbanBoard" />
+      <recent name="D:\reps\github-kanban\github-kanban\src\components" />
       <recent name="D:\reps\github-kanban\github-kanban\src\store\reducers\issueReducer" />
       <recent name="D:\reps\github-kanban\github-kanban" />
     </key>
@@ -91,6 +97,8 @@
       <option name="presentableId" value="Default" />
       <updated>1739712805633</updated>
       <workItem from="1739712806883" duration="689000" />
+      <workItem from="1739746644089" duration="2848000" />
+      <workItem from="1739802621794" duration="4415000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add libs">
       <option name="closed" value="true" />
