@@ -3,9 +3,10 @@ import KanbanBoard from './components/KanbanBoard'
 import RepoForm from './components/RepoForm'
 import { JSX } from 'react'
 import { useApp } from './useApp'
+import RepoLinks from './components/Links'
 
 const App = (): JSX.Element => {
-  const { handleLoad, loading, error, issues } = useApp()
+  const { handleLoad, loading, error, issues, repoUrl } = useApp()
 
   return (
     <Container className="mt-4">
@@ -13,6 +14,7 @@ const App = (): JSX.Element => {
       <RepoForm onLoad={handleLoad} />
       {loading && <Spinner animation="border" />}
       {error && <Alert variant="danger">{error}</Alert>}
+      <RepoLinks repoUrl={repoUrl}/>
       <KanbanBoard issues={issues} />
     </Container>
   )

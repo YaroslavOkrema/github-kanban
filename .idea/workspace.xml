@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84eddcbc-aa51-468a-8bd9-418c55924e45" name="Changes" comment="feat: add board and refactor">
-      <change afterPath="$PROJECT_DIR$/github-kanban/src/components/Columns/column.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/github-kanban/src/components/KanbanBoard/helpers.ts" afterDir="false" />
+    <list default="true" id="84eddcbc-aa51-468a-8bd9-418c55924e45" name="Changes" comment="refactor: components">
+      <change afterPath="$PROJECT_DIR$/github-kanban/src/components/Links/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github-kanban/src/components/Links/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github-kanban/src/components/Links/useRepoLinks.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github-kanban/src/constants/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/github-kanban/src/components/Columns/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/github-kanban/src/components/Columns/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/github-kanban/src/components/IssueCard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/github-kanban/src/components/IssueCard/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/github-kanban/src/components/KanbanBoard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/github-kanban/src/components/KanbanBoard/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/github-kanban/src/components/KanbanBoard/useKanbanBoard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/github-kanban/src/components/KanbanBoard/useKanbanBoard.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/github-kanban/src/types/enums.ts" beforeDir="false" afterPath="$PROJECT_DIR$/github-kanban/src/types/enums.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github-kanban/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/github-kanban/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github-kanban/src/api/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/github-kanban/src/api/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github-kanban/src/components/RepoForm/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/github-kanban/src/components/RepoForm/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github-kanban/src/useApp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/github-kanban/src/useApp.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
-        <option value="CSS File" />
         <option value="TypeScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -93,7 +94,7 @@
       <updated>1739712805633</updated>
       <workItem from="1739712806883" duration="689000" />
       <workItem from="1739746644089" duration="2848000" />
-      <workItem from="1739802621794" duration="6303000" />
+      <workItem from="1739802621794" duration="11686000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add libs">
       <option name="closed" value="true" />
@@ -127,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739808339201</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="refactor: components">
+      <option name="closed" value="true" />
+      <created>1739810317624</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1739810317624</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +147,7 @@
     <MESSAGE value="feat: add basic structure" />
     <MESSAGE value="feat: add prettier" />
     <MESSAGE value="feat: add board and refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add board and refactor" />
+    <MESSAGE value="refactor: components" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: components" />
   </component>
 </project>

@@ -5,7 +5,7 @@ import { fetchIssues } from './store/thunks/fetchIssuesThunk'
 
 export function useApp() {
   const dispatch = useDispatch<AppDispatch>()
-  const { issues, loading, error } = useSelector(
+  const { issues, loading, error, repoUrl } = useSelector(
     (state: RootState) => state.issues,
   )
 
@@ -19,6 +19,7 @@ export function useApp() {
     issues,
     loading,
     error,
+    repoUrl,
     handleLoad,
   }
 }
