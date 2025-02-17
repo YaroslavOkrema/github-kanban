@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Columns, Issue } from '../../types/types'
 import { DropResult } from 'react-beautiful-dnd'
-import { IssueState } from '../../types/enums'
+import { IssueState, TaskStatus } from '../../types/enums'
 
 export const useKanbanBoard = (issues: Issue[]) => {
   const [columns, setColumns] = useState<Columns>(() => {
@@ -33,12 +33,12 @@ export const useKanbanBoard = (issues: Issue[]) => {
     if (issues.length > 0) {
       setColumns({
         [IssueState.TODO]: issues.filter(
-          issue => issue.state === 'open' && !issue.assignee,
+          issue => issue.state === TaskStatus.OPEN && !issue.assignee,
         ),
         [IssueState.IN_PROGRESS]: issues.filter(
-          issue => issue.state === 'open' && issue.assignee,
+          issue => issue.state === TaskStatus.OPEN && issue.assignee,
         ),
-        [IssueState.DONE]: issues.filter(issue => issue.state === 'closed'),
+        [IssueState.DONE]: issues.filter(issue => issue.state === TaskStatus.CLOSED),
       })
     }
   }, [issues])

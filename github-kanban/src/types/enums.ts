@@ -3,3 +3,14 @@ export enum IssueState {
   IN_PROGRESS = 'inProgress',
   DONE = 'done',
 }
+
+export enum TaskStatus {
+  OPEN = 'open',
+  CLOSED = 'closed',
+}
+
+export enum ColumnState {
+  TODO = 'To Do',
+  IN_PROGRESS = 'In Progress',
+  DONE = 'Done',
+}
