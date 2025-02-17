@@ -4,7 +4,11 @@ import { ColumnProps } from './types'
 import { FC, JSX } from 'react'
 import './column.css'
 
-export const Column: FC<ColumnProps> = ({ title, columnId, issues }): JSX.Element => {
+export const Column: FC<ColumnProps> = ({
+  title,
+  columnId,
+  issues,
+}): JSX.Element => {
   return (
     <div className="kanban-column">
       <h3>{title}</h3>

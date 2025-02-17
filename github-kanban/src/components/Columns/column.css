@@ -1,12 +1,12 @@
 .kanban-column {
-    background-color: #f8f9fa;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    height: 100vh;
+  background-color: #f8f9fa;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  height: 100vh;
 }
 
 .kanban-column h3 {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }

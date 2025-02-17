@@ -3,7 +3,7 @@ import KanbanBoard from './components/KanbanBoard'
 import RepoForm from './components/RepoForm'
 import { JSX } from 'react'
 import { useApp } from './useApp'
-import RepoLinks from './components/Links'
+import GitHubLinks from './components/GithubLinks'
 
 const App = (): JSX.Element => {
   const { handleLoad, loading, error, issues, repoUrl } = useApp()
@@ -14,7 +14,7 @@ const App = (): JSX.Element => {
       <RepoForm onLoad={handleLoad} />
       {loading && <Spinner animation="border" />}
       {error && <Alert variant="danger">{error}</Alert>}
-      <RepoLinks repoUrl={repoUrl}/>
+      <GitHubLinks repoUrl={repoUrl} />
       <KanbanBoard issues={issues} />
     </Container>
   )

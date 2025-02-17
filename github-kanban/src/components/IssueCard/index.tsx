@@ -9,7 +9,7 @@ export const IssueCard: FC<IssueCardProps> = ({
 }): JSX.Element => {
   return (
     <Draggable draggableId={String(issue.id)} index={index}>
-      {(provided) => (
+      {provided => (
         <li
           ref={provided.innerRef}
           {...provided.draggableProps}

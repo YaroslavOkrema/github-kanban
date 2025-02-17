@@ -38,7 +38,9 @@ export const useKanbanBoard = (issues: Issue[]) => {
         [IssueState.IN_PROGRESS]: issues.filter(
           issue => issue.state === TaskStatus.OPEN && issue.assignee,
         ),
-        [IssueState.DONE]: issues.filter(issue => issue.state === TaskStatus.CLOSED),
+        [IssueState.DONE]: issues.filter(
+          issue => issue.state === TaskStatus.CLOSED,
+        ),
       })
     }
   }, [issues])
